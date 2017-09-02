@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Miranz Wallet</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="unlock_wallet">Unlock</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="balances_text">Balances</string>
+    <string name="eth">ETH: </string>
+    <string name="usd">Ether: </string>
+    <string name="send_text">send</string>
+    <string name="copy_address_text">copy address</string>
+    <string name="enter_address_text">Enter Address</string>
+    <string name="tx_hash">Tx Hash</string>
+</resources>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="android.wallet.com.wallet.WalletProfile.WalletProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_qr"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/qr_code"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/balanceTextView"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:textSize="20dp"
+                android:text="@string/balances_text"
+                android:textColor="#797373"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/etherBalanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eth"
+                android:textColor="#797373"
+                android:layout_below="@+id/balanceTextView"
+                android:layout_alignStart="@+id/balanceTextView" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:elevation="12dp"
+                android:text="@string/send_text"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/ethBalanceTextView"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/ethBalanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usd"
+                android:textColor="#797373"
+                android:layout_below="@+id/etherBalanceTextView"
+                android:layout_alignStart="@+id/etherBalanceTextView" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorAccent"
+            />
+
+        <Button
+            android:id="@+id/copyWalletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/copy_address_text"
+            android:background="#ffffff"
+            android:textColor="@color/colorAccent"
+            android:layout_alignBaseline="@+id/sendButton"
+            android:layout_alignBottom="@+id/sendButton"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorAccent"
+            />
+
+        <ListView
+            android:layout_margin="3dp"
+            android:id="@+id/transactionHistories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
