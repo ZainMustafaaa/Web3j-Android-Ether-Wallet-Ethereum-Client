@@ -9,9 +9,6 @@ We developed a simple DApp Ether Wallet in Android. The following functionalitie
 # Getting Started
 This application uploaded for learning purpose. Just copy your UTC file in your phone External or Internal Storage for logging in with network. These instructions will help you to copy this project and run to your local machine. 
 
-## Interface
-![screenshot_2017-08-28-15-13-57](https://user-images.githubusercontent.com/30625999/29769544-accc7188-8b9f-11e7-9c57-40a3b3dd85ff.jpeg)
-
 ## Manifest
 ### Permissions
 1. android.permission.INTERNET
