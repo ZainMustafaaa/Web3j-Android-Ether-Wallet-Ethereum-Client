@@ -1,5 +1,5 @@
 # Web3j-Android-Ether-Wallet-Ethereum-Client
-We developed a simple DApp Ether Wallet in Android. The following functionalities of this project is discuss below.
+I developed a simple DApp Ether Wallet in Android. The following functionalities of this project is discuss below.
 # Functionality 
 1. You can login to your existing wallet.
 2. You can connect to any four major ethereum blockchain networks (Rinkeby, Kovan, Ropsten, Main-Net).
